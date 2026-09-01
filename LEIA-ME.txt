@@ -1,0 +1,128 @@
+================================================================================
+BRIAN: A MANSÃO DE BLACKWOOD - GUIA DE INICIALIZAÇÃO
+================================================================================
+
+👾 BEM-VINDO AO JOGO! 👾
+
+Este projeto contém dois arquivos .bat para iniciar o jogo:
+
+================================================================================
+OPÇÃO 1: "Iniciar jogo.bat" (RECOMENDADO - Mais Simples)
+================================================================================
+
+✅ O que faz:
+- Abre o arquivo index.html diretamente no seu navegador padrão
+- Não requer instalação de nada extra
+- Funciona offline (após as imagens carregarem)
+
+📝 Como usar:
+1. Clique 2x em "Iniciar jogo.bat"
+2. Seu navegador abrirá automaticamente com o jogo
+3. Comece a jogar!
+
+⚠️ Notas:
+- Se o arquivo não abrir, copie este caminho no navegador:
+  file:///C:/seu/caminho/jogoterrorpy_html/index.html
+
+================================================================================
+OPÇÃO 2: "Iniciar com servidor.bat" (Mais Profissional)
+================================================================================
+
+✅ O que faz:
+- Inicia um servidor HTTP local (http://localhost:8000)
+- Oferece melhor compatibilidade e segurança
+- Recomendado para desenvolvedores
+
+📋 Requisitos:
+- Python 3.x instalado (https://www.python.org)
+- Python deve estar no PATH do Windows
+
+📝 Como usar:
+1. Clique 2x em "Iniciar com servidor.bat"
+2. Uma janela preta (console) abrirá
+3. Seu navegador abrirá com: http://localhost:8000
+4. Comece a jogar!
+
+⏹️ Para parar o servidor:
+- Clique na janela preta e pressione CTRL+C
+- Ou simplesmente feche a janela
+
+================================================================================
+ALTERNATIVA 3: Abrir Manualmente
+================================================================================
+
+Você também pode abrir o jogo manualmente:
+
+1. Abra seu navegador (Chrome, Firefox, Edge, Safari, etc)
+2. Pressione CTRL+O (ou Cmd+O no Mac)
+3. Selecione o arquivo "index.html" da pasta do jogo
+4. Pronto! O jogo iniciará
+
+================================================================================
+ESTRUTURA DO PROJETO
+================================================================================
+
+jogoterrorpy_html/
+├── index.html                    # Arquivo principal do jogo
+├── styles.css                    # Estilos e design
+├── game.js                       # Lógica do jogo
+├── static/                       # Pasta com todas as imagens
+│   ├── Entradanamansao.png
+│   ├── Escritoriodotio.png
+│   ├── Logo.png                 # Favicon
+│   └── ... (mais imagens)
+├── Iniciar jogo.bat              # Atalho para abrir (SIMPLES)
+├── Iniciar com servidor.bat      # Atalho com servidor (AVANÇADO)
+├── COMO_JOGAR.md                # Guia completo do jogo
+└── README.md                     # Documentação original
+
+================================================================================
+NAVEGADORES COMPATÍVEIS
+================================================================================
+
+✅ Totalmente Compatível:
+- Google Chrome (recomendado)
+- Microsoft Edge
+- Mozilla Firefox
+- Safari (macOS/iOS)
+- Opera
+
+================================================================================
+DICAS
+================================================================================
+
+🎮 Gameplay:
+- Leia atentamente a história
+- Observe as imagens na esquerda
+- Escolha com sabedoria (afetam o final!)
+- Acompanhe sua Vida e Sanidade
+
+💾 Save/Load:
+- Use "Salvar Progresso" para guardar
+- Use "Carregar" para continuar depois
+- Dados são salvos no navegador
+
+⚙️ Problemas Comuns:
+- Imagens não aparecem? Certifique-se da pasta "static/"
+- Jogo não abre? Tente abrir index.html diretamente
+- Travamentos? Limpe o cache do navegador (CTRL+SHIFT+DEL)
+
+================================================================================
+CONTATO & SUPORTE
+================================================================================
+
+Se tiver problemas:
+1. Verifique se Python está instalado (para servidor.bat)
+2. Teste em outro navegador
+3. Limpe cache/cookies do navegador
+4. Verifique se a pasta "static/" com imagens está presente
+
+================================================================================
+DIVERSÃO GARANTIDA! 👾🎮
+================================================================================
+
+"A mansão aguarda... você conseguirá descobrir seus segredos?"
+
+Boa sorte, Brian!
+
+================================================================================
