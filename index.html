@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian: A Mansão de Blackwood</title>
+    <link rel="icon" type="image/png" href="static/Logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- IMAGEM LADO ESQUERDO -->
+        <div class="game-section image-section">
+            <div class="image-container">
+                <img id="gameImage" src="static/Code_Generated_Image (1).png" alt="Cena do jogo">
+                <div class="image-caption" id="imageCaption">A Mansão de Blackwood</div>
+            </div>
+        </div>
+
+        <!-- HISTÓRIA E INTERAÇÃO LADO DIREITO -->
+        <div class="game-section story-section">
+            <!-- HEADER COM TÍTULO -->
+            <div class="game-header">
+                <h1>BRIAN: A MANSÃO DE BLACKWOOD</h1>
+                <p class="subtitle">RPG de Terror em Texto</p>
+            </div>
+
+            <!-- STATUS PLAYER -->
+            <div class="status-panel">
+                <div class="status-item">
+                    <span class="status-label">❤️ Vida</span>
+                    <div class="status-bar">
+                        <div class="status-fill vida-fill" id="vidaBar" style="width: 100%"></div>
+                    </div>
+                    <span class="status-value" id="vidaValue">100/100</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">🧠 Sanidade</span>
+                    <div class="status-bar">
+                        <div class="status-fill sanidade-fill" id="sanidadeBar" style="width: 100%"></div>
+                    </div>
+                    <span class="status-value" id="sanidadeValue">100/100</span>
+                </div>
+                <div class="status-item-inline">
+                    <span class="status-label">🔑 Chaves</span>
+                    <span class="status-value" id="chavesValue">0/3</span>
+                </div>
+                <div class="status-item-inline">
+                    <span class="status-label">🎒 Inventário</span>
+                    <span class="status-value" id="inventarioValue">Vazio</span>
+                </div>
+            </div>
+
+            <!-- NARRAÇÃO E HISTÓRIA -->
+            <div class="story-container">
+                <div class="chapter-title" id="chapterTitle">CAPÍTULO 1 - A HERANÇA</div>
+                <div class="narrative-text" id="narrativeText">
+                    Uma chuva pesada cai sobre Blackwood. Brian estaciona diante da mansão que herdou de seu tio, Arthur Blackwood.
+                </div>
+            </div>
+
+            <!-- OPÇÕES DE ESCOLHA -->
+            <div class="choices-container" id="choicesContainer">
+                <div class="choice-button" onclick="selectChoice(0)">
+                    <span class="choice-number">[1]</span>
+                    <span class="choice-text">Acender a luz e explorar o hall</span>
+                </div>
+                <div class="choice-button" onclick="selectChoice(1)">
+                    <span class="choice-number">[2]</span>
+                    <span class="choice-text">Ir direto para o escritório do tio</span>
+                </div>
+                <div class="choice-button" onclick="selectChoice(2)">
+                    <span class="choice-number">[3]</span>
+                    <span class="choice-text">Investigar um barulho vindo da cozinha</span>
+                </div>
+            </div>
+
+            <!-- BOTÕES DE CONTROLE -->
+            <div class="control-buttons">
+                <button class="btn-control" id="restartBtn" onclick="restartGame()">🔄 Reiniciar</button>
+                <button class="btn-control" id="saveBtn" onclick="saveGame()">💾 Salvar Progresso</button>
+                <button class="btn-control" id="loadBtn" onclick="loadGame()">📂 Carregar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PARA LIVROS E EVENTOS -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Título</h2>
+            <div id="modalText">Conteúdo do evento</div>
+            <button class="btn-primary" onclick="closeModal()">Continuar</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
